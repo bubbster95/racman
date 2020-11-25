@@ -1,0 +1,38 @@
+.service-filter {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+.machine-type, .toggled {
+    width: 100%;
+    font-size: 15pt;
+    padding: 5px;
+}
+
+.machine-type {
+    margin: 5px;
+    color: white;
+    background-color: rgb(52, 77, 122);
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.machine-type:hover {
+    background-color: white;
+    color: rgb(52, 77, 122);
+    border: 2px solid rgb(52, 77, 122);
+}
+
+.machine-makes {
+    height: 0;
+    margin: 0;
+    display: none;
+}
+
+.toggled {
+    display: block;
+    height: unset;
+    margin: -5px 5px 5px 5px;
+    border: 2px solid white;
+    background-color: rgba(52, 76, 122, 0.2);
+}

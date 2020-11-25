@@ -1,0 +1,164 @@
+/* Nav */
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    /* left: 0;
+    right: 0; */
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: white;
+    border-bottom: 3px solid rgb(52, 77, 122);
+}
+
+.home-button {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    left: 10px;
+    height: 50px;
+    width: 30vw;
+    max-width: 200px;
+    min-width: 150px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hamburger-icon {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30pt;
+    right: 20px;
+    bottom: px;
+}
+
+.nav-wrap {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    top: 53px;
+    background-color: rgb(52, 77, 122);
+}
+
+.nav-button {
+    font-size: 15pt;
+    margin: 35px;
+    cursor: pointer;
+}
+
+.nav-button:hover, .active {
+    color: rgb(122, 216, 208);
+}
+
+.visible {
+    height: 300px;
+}
+
+.bar {
+    position: relative;
+    background-color:rgb(52, 77, 122);
+    width: 100%;
+    margin: 5px;
+    height: 10%;
+}
+
+#top, #bottom {
+    transition: all .5s
+}
+
+.tilt {
+    top: 20%;
+    transform: rotate(45deg);
+}
+
+.fade {
+    opacity: 0;
+}
+
+.untilt {
+    bottom: 35%;
+    transform: rotate(-45deg);
+}
+
+
+@media screen and (min-width: 500px) and (min-device-width: 500px){
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-wrap {
+        display: block;
+        height: 50px;
+        top: 0;
+        color: rgb(52, 77, 122);
+        background-color: white;
+        border-bottom: 3px solid rgb(52, 77, 122);
+    }
+    .nav-button {
+        float: right;
+        margin: 12px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .hamburger-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .nav-wrap {
+        height: 0px;
+        top: 50px;
+        transition: all .5s;
+    }
+    
+    .nav-button {
+        font-size: 20pt;
+        margin: 20px;
+    }
+
+    .visible {
+        height: 210px;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    nav {
+        top: 0;
+        height: 80px;
+        border-bottom: 10px solid rgb(52, 77, 122);
+    }
+    
+    .hamburger-icon {
+        width: 50px;
+        height: 50px;
+        bottom: 0px;
+    }
+    
+    .nav-wrap {
+        height: 0px;
+        top: 80px;
+        transition: all .5s;
+    }
+    
+    .nav-button {
+        font-size: 30pt;
+        margin: 40px;
+    }
+
+    .visible {
+        height: 380px;
+    }
+
+    .untilt {
+        bottom: 20%;
+    }
+}
+/* Nav End */

@@ -1,0 +1,15 @@
+#home {
+    background-color: rgba(52, 76, 122, 0.2);
+    padding: 10px;
+    padding-top: 90px;
+    height: 500px;
+}
+
+.home-titles {
+    background-color: rgb(52, 77, 122);
+    padding: 20px;
+}
+
+.home-title {
+    color: white;
+}

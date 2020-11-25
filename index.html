@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racman Inc.</title>
+
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Nav/nav.css">
+    <link rel="stylesheet" href="Home/home.css">
+    <link rel="stylesheet" href="Service/service.css">
+
+    <script src='Nav/nav.js'></script>
+    <script src='index.js'></script>
+    <script src='Service/service.js'></script>
+    <script src='Service/service.object.js'></script>
+</head>
+<body onscroll="scrollEvents()" onload="service()">
+    <!-- Nav -->
+    <nav class="nav-container">
+
+        <div
+            class="home-button"
+            id="home-button"
+            style="background-image: url('assets/RacmanLogo.png');"
+            onClick="document.getElementById('home').scrollIntoView()"
+        ></div>
+
+        <div class="nav-wrap" onClick="hamburger()">
+            
+            <div
+            class="nav-button"
+            id="sales-button"
+            onClick="document.getElementById('sales').scrollIntoView()"
+            >Sales</div>
+            
+            <div
+            class="nav-button"
+            id="services-button"
+            onClick="document.getElementById('services').scrollIntoView()"
+            >Services</div>
+            
+            <div
+            class="nav-button"
+            id="about-button"
+            onClick="document.getElementById('about').scrollIntoView()"
+            >About</div>
+            
+            <div
+            class="nav-button"
+            id="contact-button"
+            onclick="document.getElementById('contact').scrollIntoView()"
+            >Contact</div>
+        </div>
+        <div class="hamburger-icon" onClick="hamburger()">
+            <div class="bar" id="top"></div>
+            <div class="bar" id="middle"></div>
+            <div class="bar" id="bottom"></div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home">
+            <div class="home-titles">
+                <h1 class="home-title">Call Racman</h1>
+                <h1 class="home-title">401-397-2722</h1>
+            </div>
+            
+            <h1 class="home-text-title">We Offer:</h1>
+            <img
+            class="right-image"
+            src="assets/right-copier.png">
+            <p class="home-text">
+                Friendly, professional, onsite electronic equipment service.
+                <br><br>
+                As well as the highest quality copiers at reasonable prices.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sales -->
+    <section id="sales">
+        <div class="sales">
+            <h1 class="sales-title">
+                Refurbished Copiers
+            </h1>
+            <h2 class="sales=sub">
+                Don't delay, our hand selected copiers move fast!
+            </h2>
+            <img
+            class="left-image"
+            src="assets/middle-copier.png">
+            <p class="sales-text">
+                We help you determine the best equipment for your needs.
+                You get meticulously restored machines at a huge discount.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Services -->
+    <section id="services">
+        <div class="services">
+            <h1 class="services-title">
+                Services
+            </h1>
+            <p class="services-text">
+                We service most makes and models.
+                Racman guarantees the work and assures your satisfaction.
+                We work with local partners to provide additional expertise, emergency backup and referrals for related services such as computer configuration.
+                One call is all it takes to keep your business running.
+            </p>
+            <h2 class="services-sub">
+                What we service
+            </h2>
+            <div class="service-filter"></div>
+
+
+            <h1 class="services-title">
+                Repair  Adjust  Clean
+            </h1>
+
+            <h2 class="services-sub">
+                That's what we do
+            </h2>
+            
+            <p class="services-text">
+                Racman provides various office equipment services. Our process is simple, we:
+                <ul>
+                    <li>Clean equipment thoroughly.</li>
+                    <li>Adjust to resolve small problems.</li>
+                    <li>Repair only if needed.</li>
+                </ul>
+                With Racman your equipment runs better and lasts longer, saving you time and money.                
+            </p>
+        </div>
+    </section>
+    
+    <!-- About-->
+    <section id="about">
+        <div class="about">
+            <h1 class="about-title">
+                About
+            </h1>
+            <h2 class="about-sub">
+                Serving Rhode Island for over twenty years
+            </h2>
+            
+            <p class="about-text">
+                Dave and his wife Jackie started Racman over twenty years ago. With Dave's background in electronics and Jackie's experience in customer service, they were the perfect team. Racman is still going strong today.
+                    Over thirty years of experience
+                    <ul>
+                        <li>Up to date on industry standards</li>
+                        <li>Bachelor's in Electronics Engineering</li>
+                        <li>Navy electrician</li>
+                    </ul>
+                    "As a family business, we feel our wonderful customers are also a part of our family and make our work truly rewarding. We are very grateful for the opportunity to serve you all. Thank you!"  Dave and Jackie,  founders of Racman, Inc.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact">
+            <h1 class="contact-title">
+                Reliable ~ Fast Response ~ Insured
+            </h1>
+
+            <h2 class="contact-sub">
+                One call is all it takes to keep your business running
+            </h2>
+            
+            <p class="contact-text">
+                Call and leave a detailed message.
+                Include the type of equipment, any symptoms, or error codes.
+                Your call will be returned promptly, generally within one hour.
+                Racman.Dave@gmail.com            
+            </p>
+        </div>
+    </section>
+</body>
+</html>

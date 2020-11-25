@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Nav/nav.css">
     <link rel="stylesheet" href="Home/home.css">
+    <link rel="stylesheet" href="Sales/sales.css">
     <link rel="stylesheet" href="Service/service.css">
+    <link rel="stylesheet" href="About/about.css">
+    <link rel="stylesheet" href="Contact/contact.css">
 
     <script src='Nav/nav.js'></script>
     <script src='index.js'></script>
@@ -26,6 +29,8 @@
             style="background-image: url('assets/RacmanLogo.png');"
             onClick="document.getElementById('home').scrollIntoView()"
         ></div>
+
+        <span class="phone">401-397-2722</span>
 
         <div class="nav-wrap" onClick="hamburger()">
             
@@ -69,13 +74,15 @@
             </div>
             
             <h1 class="home-text-title">We Offer:</h1>
-            <img
-            class="right-image"
-            src="assets/right-copier.png">
+
+            <img class="right-image" src="assets/right-copier.png">
+
             <p class="home-text">
-                Friendly, professional, onsite electronic equipment service.
-                <br><br>
-                As well as the highest quality copiers at reasonable prices.
+                Friendly, professional, and insured, onsite electronic equipment service.
+            </p>
+
+            <p class="home-text">
+                Additionally we offer the highest quality copiers at reasonable prices.
             </p>
         </div>
     </section>
@@ -84,15 +91,16 @@
     <section id="sales">
         <div class="sales">
             <h1 class="sales-title">
-                Refurbished Copiers
+                Sales
             </h1>
-            <h2 class="sales=sub">
-                Don't delay, our hand selected copiers move fast!
+            <h2 class="sales-sub">
+                Refurbished Copiers
             </h2>
             <img
             class="left-image"
             src="assets/middle-copier.png">
             <p class="sales-text">
+                Don't delay, our hand selected copiers move fast.
                 We help you determine the best equipment for your needs.
                 You get meticulously restored machines at a huge discount.
             </p>
@@ -105,20 +113,28 @@
             <h1 class="services-title">
                 Services
             </h1>
+
             <p class="services-text">
                 We service most makes and models.
-                Racman guarantees the work and assures your satisfaction.
+                Racman guarantees fast reliable work and assures your satisfaction.
                 We work with local partners to provide additional expertise, emergency backup and referrals for related services such as computer configuration.
                 One call is all it takes to keep your business running.
             </p>
+
             <h2 class="services-sub">
                 What we service
             </h2>
-            <div class="service-filter"></div>
 
+            <p class="services-text">
+                Click a machine type below to check if we service your brand.
+            </p>
+
+            <div class="service-filter">
+
+            </div>
 
             <h1 class="services-title">
-                Repair  Adjust  Clean
+                Repair - Adjust - Clean
             </h1>
 
             <h2 class="services-sub">
@@ -126,13 +142,17 @@
             </h2>
             
             <p class="services-text">
-                Racman provides various office equipment services. Our process is simple, we:
-                <ul>
-                    <li>Clean equipment thoroughly.</li>
-                    <li>Adjust to resolve small problems.</li>
-                    <li>Repair only if needed.</li>
-                </ul>
-                With Racman your equipment runs better and lasts longer, saving you time and money.                
+                Our process is simple, <span class="blue">we:</span>
+            </p>
+
+            <ul class="list">
+                <li><span class="blue">Repair</span> only if needed</li>
+                <li><span class="blue">Adjust</span> to resolve small problems</li>
+                <li><span class="blue">Clean</span> equipment thoroughly</li>
+            </ul>
+
+            <p class="services-text">
+                With Racman, your equipment runs better and lasts longer; saving you time and money.                
             </p>
         </div>
     </section>
@@ -146,16 +166,28 @@
             <h2 class="about-sub">
                 Serving Rhode Island for over twenty years
             </h2>
+
+            <img class="center-image" src="assets/Dave_Jackie_Italy.png">
+
             
             <p class="about-text">
-                Dave and his wife Jackie started Racman over twenty years ago. With Dave's background in electronics and Jackie's experience in customer service, they were the perfect team. Racman is still going strong today.
-                    Over thirty years of experience
+                Dave and his wife Jackie started Racman over twenty years ago.
+                With Dave's background in electronics and Jackie's experience in customer service, they make the perfect team.
+                Racman is still going strong today.
+            </p>
+            <p class="about-text">As a technician, <span class="blue">Dave has:</span></p>
                     <ul>
+                        <li>Over thirty years of experience</li>
                         <li>Up to date on industry standards</li>
                         <li>Bachelor's in Electronics Engineering</li>
-                        <li>Navy electrician</li>
+                        <li>Foundation as Navy electrician</li>
                     </ul>
-                    "As a family business, we feel our wonderful customers are also a part of our family and make our work truly rewarding. We are very grateful for the opportunity to serve you all. Thank you!"  Dave and Jackie,  founders of Racman, Inc.
+
+            <p class="about-text"> 
+                 "As a family business, we feel our wonderful customers are a part of our family and make our work truly rewarding.
+                 We are very grateful for the opportunity to serve you all.
+                 Thank you!" <br>
+                 <span class='blue'>- Dave and Jackie</span>
             </p>
         </div>
     </section>
@@ -164,19 +196,38 @@
     <section id="contact">
         <div class="contact">
             <h1 class="contact-title">
-                Reliable ~ Fast Response ~ Insured
+                Contact
             </h1>
-
-            <h2 class="contact-sub">
-                One call is all it takes to keep your business running
-            </h2>
+            <!-- <h2 class="contact-sub">
+                Reliable - Responsive - Insured
+            </h2> -->
             
-            <p class="contact-text">
-                Call and leave a detailed message.
-                Include the type of equipment, any symptoms, or error codes.
-                Your call will be returned promptly, generally within one hour.
-                Racman.Dave@gmail.com            
+            <h2 class="contact-text">
+                401-397-2722
+            </h2>
+
+            <p class="contact-text ">
+                Leave a detailed message<br> <span class="blue">please include:</span>
+                <ul>
+                    <li>
+                        Type of equipment (Copier, FAX, etc)
+                    </li>
+                    <li>
+                        Any symptoms
+                    </li>
+                    <li>
+                        Any error codes
+                    </li>
+                </ul>
+            </P>
+
+            <p class="contact-text ">
+                Your call will be returned promptly; generally within an hour.
             </p>
+
+            <h2 class="contact-text">
+                <span class="blue">racman.dave@gmail.com</span>             
+            </h2>
         </div>
     </section>
 </body>

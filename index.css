@@ -14,25 +14,38 @@ html, body {
 section {
     width: 100%;
     max-width: 1000px;
-    /* height: 100vh; */
     margin: auto;
     padding-top: 90px;
+    border-bottom: 3px solid rgb(25, 80, 170);
 }
 
 h1 {
-    color: rgb(52, 77, 122);
-    font-size: 20pt;
-    margin: 20px;
+    color: rgb(25, 80, 170);
+    font-size: 30pt;
+    margin: 25px;
 }
 
 h2 {
     color: rgb(52, 77, 122); 
-    font-size: 12pt;
-    margin: 10px;
+    font-size: 20pt;
+    margin: 15px;
 }
 
 p {
     font-size: 15pt;
+    margin: 20px;
+}
+
+ul {
+    width: 75%;
+    max-width: 300px;
+    font-size: 15pt;
+    padding-top: 10px;
+    margin: auto;
+}
+
+li {
+    text-align: left;
 }
 
 .right-image {
@@ -45,4 +58,9 @@ p {
     float: left;
     width: 100px;
     margin: 5px;
+}
+
+.center-image {
+    width: 100vw;
+    max-width: 500px;
 }

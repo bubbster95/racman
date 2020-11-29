@@ -32,7 +32,6 @@ nav {
     color: rgb(25, 80, 170);
     font-size: 0pt;
     font-weight: bold;
-
 }
 
 .call {
@@ -120,7 +119,6 @@ nav {
         float: right;
         margin: 12px;
     }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -143,6 +141,12 @@ nav {
     .visible {
         height: 210px;
     }
+
+    .call {
+        left: 180px;
+        bottom: 6px;
+    }
+
 }
 
 @media screen and (max-device-width: 500px) {
@@ -175,6 +179,11 @@ nav {
 
     .untilt {
         bottom: 20%;
+    }
+
+    .call {
+        left: 5px;
+        bottom: 0px;
     }
 }
 /* Nav End */

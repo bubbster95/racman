@@ -1,3 +1,9 @@
+.services {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
 .service-filter {
     width: 90%;
     max-width: 500px;

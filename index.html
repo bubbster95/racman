@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Racman Inc.</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Nav/nav.css">
@@ -19,10 +21,10 @@
     <script src='Service/service.js'></script>
     <script src='Service/service.object.js'></script>
 </head>
-<body onscroll="scrollEvents()" onload="service()">
+
+<body  onload="service()">
     <!-- Nav -->
     <nav class="nav-container">
-
         <div
             class="home-button"
             id="home-button"
@@ -30,7 +32,7 @@
             onClick="document.getElementById('home').scrollIntoView()"
         ></div>
 
-        <span class="phone">401-397-2722</span>
+        <!-- <span class="phone">401-397-2722</span> -->
 
         <div class="nav-wrap" onClick="hamburger()">
             
@@ -64,45 +66,49 @@
             <div class="bar" id="bottom"></div>
         </div>
     </nav>
-
+    <!-- Parallax -->
+    <div class="parallax-wrapper">
+        <div class="home-titles">
+        <h2 class="home-title">Call Racman</h2>
+        <h1 class="home-title">401-397-2722</h1>
+        </div>
+    </div>
     <!-- Home -->
     <section id="home">
         <div class="home">
-            <div class="home-titles">
-                <h1 class="home-title">Call Racman</h1>
-                <h1 class="home-title">401-397-2722</h1>
+            <h1 class="home-text-title white">We Offer:</h1>
+            
+            <div class="home-text-box">
+                <h2>Repair</h2>
+                <img class="icon" src="assets/ToolsLogo.png" alt="Wrench and screw driver icon.">
+                <p class="home-text">
+                    Friendly, professional, and insured, onsite electronic equipment service.
+                </p>
             </div>
             
-            <h1 class="home-text-title">We Offer:</h1>
-
-            <!-- <img class="right-image" src="assets/right-copier.png"> -->
-
-            <p class="home-text">
-                Friendly, professional, and insured, onsite electronic equipment service.
-            </p>
-
-            <p class="home-text">
-                Additionally we offer the highest quality copiers at reasonable prices.
-            </p>
-        </div>
+            <div class="home-text-box">
+                <h2>Sales</h2>
+                <img class="icon" src="assets/CopierIcon.png" alt="Copier icon.">
+                <p class="home-text">
+                    The highest quality newly referbished copiers; at reasonable prices.
+                </p>
+            </div>
+            </div>
     </section>
 
     <!-- Sales -->
     <section id="sales">
         <div class="sales">
             <h1 class="sales-title">
-                Sales
+            Sales
             </h1>
             <h2 class="sales-sub">
-                Refurbished Copiers
+            Refurbished Copiers
             </h2>
-            <!-- <img
-            class="left-image"
-            src="assets/middle-copier.png"> -->
             <p class="sales-text">
-                Don't delay, our hand selected copiers move fast.
-                We help you determine the best equipment for your needs.
-                You get meticulously restored machines at a huge discount.
+            Don't delay, our hand selected copiers move fast.
+            We help you determine the best equipment for your needs.
+            You get meticulously restored machines at a huge discount.
             </p>
         </div>
     </section>
@@ -110,50 +116,49 @@
     <!-- Services -->
     <section id="services">
         <div class="services">
-            <h1 class="services-title">
-                Services
-            </h1>
-
-            <p class="services-text">
-                We service most makes and models.
-                Racman guarantees fast reliable work and assures your satisfaction.
-                We work with local partners to provide additional expertise, emergency backup and referrals for related services such as computer configuration.
-                One call is all it takes to keep your business running.
-            </p>
-
-            <h2 class="services-sub">
-                What we service
-            </h2>
-
-            <p class="services-text">
-                Click a machine type below to check if we service your brand.
-            </p>
-
-            <div class="service-filter">
-
-            </div>
-
-            <h1 class="services-title">
-                Repair - Adjust - Clean
-            </h1>
-
-            <h2 class="services-sub">
-                That's what we do
-            </h2>
-            
-            <p class="services-text">
-                Our process is simple, <span class="blue">we:</span>
-            </p>
-
-            <ul class="list">
-                <li><span class="blue">Repair</span> only if needed</li>
-                <li><span class="blue">Adjust</span> to resolve small problems</li>
-                <li><span class="blue">Clean</span> equipment thoroughly</li>
-            </ul>
-
-            <p class="services-text">
-                With Racman, your equipment runs better and lasts longer; saving you time and money.                
-            </p>
+        <h1 class="services-title">
+        Services
+        </h1>
+        
+        <p class="services-text">
+        We service most makes and models.
+        Racman guarantees fast reliable work and assures your satisfaction.
+        We work with local partners to provide additional expertise, emergency backup and referrals for related services such as computer configuration.
+        One call is all it takes to keep your business running.
+        </p>
+        
+        <h2 class="services-sub">
+        What we service
+        </h2>
+        
+        <p class="services-text">
+        Click a machine type below to check if we service your brand.
+        </p>
+        
+        <div class="service-filter">
+        
+        </div>
+        
+        <h2 class="services-title">
+        Repair - Adjust - Clean
+        </h2>
+        
+        <h2 class="services-sub">
+        That's what we do
+        </h2>
+        <p class="services-text">
+        Our process is simple, <span class="blue">we:</span>
+        </p>
+        
+        <ul class="list">
+        <li><span class="blue">Repair</span> only if needed</li>
+        <li><span class="blue">Adjust</span> to resolve small problems</li>
+        <li><span class="blue">Clean</span> equipment thoroughly</li>
+        </ul>
+        
+        <p class="services-text">
+        With Racman, your equipment runs better and lasts longer; saving you time and money.
+        </p>
         </div>
     </section>
     
@@ -161,71 +166,64 @@
     <section id="about">
         <div class="about">
             <h1 class="about-title">
-                About
+            About
             </h1>
             <h2 class="about-sub">
-                Serving Rhode Island for over twenty years
+            Serving Rhode Island for over twenty years
             </h2>
-
+            
             <img class="center-image" src="assets/Dave_Jackie_Italy.png">
-
             
             <p class="about-text">
-                Dave and his wife Jackie started Racman over twenty years ago.
-                With Dave's background in electronics and Jackie's experience in customer service, they make the perfect team.
-                Racman is still going strong today.
+            Dave started Racman over twenty years ago.
+            Racman is still going strong today.
             </p>
             <p class="about-text">As a technician, <span class="blue">Dave has:</span></p>
-                    <ul>
-                        <li>Over thirty years of experience</li>
-                        <li>Up to date on industry standards</li>
-                        <li>Bachelor's in Electronics Engineering</li>
-                        <li>Foundation as Navy electrician</li>
-                    </ul>
-
-            <p class="about-text"> 
-                 "As a family business, we feel our wonderful customers are a part of our family and make our work truly rewarding.
-                 We are very grateful for the opportunity to serve you all.
-                 Thank you!" <br>
-                 <span class='blue'>- Dave and Jackie</span>
+            <ul>
+            <li>Over thirty years of experience</li>
+            <li>Up to date on industry standards</li>
+            <li>Bachelor's in Electronics Engineering</li>
+            <li>Foundation as Navy electrician</li>
+            </ul>
+            
+            <p class="about-text">
+            "As a family business, we feel our wonderful customers are a part of our family and make our work truly rewarding.
+            We are very grateful for the opportunity to serve you all.
+            Thank you!" <br>
+            <span class='blue'>- Dave Fusco</span>
             </p>
-        </div>
+            </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
         <div class="contact">
-            <h1 class="contact-title">
+            <h1 class="contact-title white">
                 Contact
             </h1>
-            
-            <h2 class="contact-text">
+            <h2 class="contact-text white">
                 401-397-2722
             </h2>
-
-            <p class="contact-text ">
-                Leave a detailed message<br> <span class="blue">please include:</span>
-                <ul>
-                    <li>
-                        Type of equipment (Copier, FAX, etc)
-                    </li>
-                    <li>
-                        Any symptoms
-                    </li>
-                    <li>
-                        Any error codes
-                    </li>
+            
+            <p class="contact-text white">
+                Leave a detailed message<br>
+                <span class="white bold">please include:</span>
+                
+                <ul class="white">
+                    <li>Type of equipment (Copier, FAX, etc)</li>
+                    <li>Any symptoms</li>
+                    <li>Any error codes</li>
                 </ul>
             </P>
-
-            <p class="contact-text ">
+            
+            <p class="contact-text white">
                 Your call will be returned promptly; generally within an hour.
             </p>
-
-            <h2 class="contact-text">
-                <span class="blue">racman.dave@gmail.com</span>             
+            
+            <h2 class="contact-text white">
+                <span class="white bold">racman.dave@gmail.com</span>
             </h2>
-        </div>
+            </div>
     </section>
 </body>
 </html>

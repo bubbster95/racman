@@ -1,3 +1,5 @@
-#sales {
-    background-color: rgba(52, 76, 122, 0.2);
+.sales {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }

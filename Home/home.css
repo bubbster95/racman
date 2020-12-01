@@ -1,13 +1,63 @@
-#home {
-    padding: 10px;
-    padding-top: 90px;
+.parallax-wrapper {
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax-wrapper::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/computer-repair.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
 }
 
 .home-titles {
-    background-color: rgb(52, 77, 122);
-    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(52, 77, 122, .6);
 }
 
 .home-title {
     color: white;
+    margin: 10px;
+}
+
+#home {
+    position: relative;
+    padding: 20px;
+    width: 100vw;
+    z-index: 2;
+}
+
+.home-text-box {
+    width: 40%;
+    max-width: 300px;
+    margin: 20px;
+    background-color: white;
+    display: inline-block;
+}
+
+.icon {
+    margin: 10px auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 500px) {
+    .home-text-box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .home-text-box {
+        width: 90%;
+    }
 }

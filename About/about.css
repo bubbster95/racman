@@ -1,3 +1,5 @@
-#about {
-    background-color: rgba(52, 76, 122, 0.2);
+.about {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }

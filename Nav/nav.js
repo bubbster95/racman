@@ -18,6 +18,7 @@ hamburger = () => {
     }
 }
 
+
 // Runs when body scrolls, updates menus' state
 scrollEvents = () => {
     let aboutHeight = document.getElementById('about').offsetTop - (window.innerHeight * .5);
@@ -48,16 +49,6 @@ scrollEvents = () => {
     } else if (screenHeight >= contactHeight) {
         contactButton.className = 'nav-button active';
     } 
-
-    let phone = document.querySelector('.phone');
-    let logo = document.querySelector('.home-button');
-    if (screenHeight >= '250') {
-        phone.className = 'phone call';
-        logo.className = 'home-button shiftUp';
-    } else {
-        phone.className = 'phone'
-        logo.className = 'home-button'
-    }
     // else {
     //     homeButton.className = 'nav-button active';
     // }

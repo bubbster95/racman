@@ -3,3 +3,29 @@
     max-width: 800px;
     margin: auto;
 }
+
+.profile {
+    position: relative;
+    width: 40%;
+    display: inline-block;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+.image-text {
+    color: white;
+    position: absolute;
+    font-size: 30pt;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 500px) and (max-device-width: 500px){
+   .profile {
+       display: block;
+       width: 100%;
+   }
+}

@@ -40,10 +40,11 @@ h1 {
 }
 
 h2 {
-    color: rgb(52, 77, 122); 
+    color: rgb(25, 80, 170); 
     font-size: 20pt;
     font-weight: 600;
-    margin: 15px;
+    margin: 25px;
+    margin-top: 50px;
 }
 
 p {
@@ -83,6 +84,11 @@ li {
 
 .white {
     color: white;
+}
+
+.blue {
+    color: rgb(25, 80, 170);
+    font-weight: bold;
 }
 
 .bold {

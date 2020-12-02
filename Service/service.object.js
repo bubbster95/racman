@@ -7,3 +7,7 @@ const serviceObj = {
     DotMatrix: ['Oki', 'Panasonic', 'Epson'],
     Laminator: ['USI']
 }
+
+const makesObj = {
+    makes: ['Canon', 'Brother', 'Ricoh', 'Sharp', 'Xerox', 'Oki', 'Dell', 'Konica', 'Minolta', 'Lexmark', 'Samsung', 'Toshiba', 'Epson', 'Panasonic', 'USI']
+}

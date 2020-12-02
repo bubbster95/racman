@@ -7,3 +7,43 @@
 .left-align {
     text-align: left;
 }
+
+.phone-number {
+    margin: 20px;
+    font-size: 30pt;
+}
+
+.heat-map-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heat-map, .contact-content {
+    display: inline-block;
+    width: 40%;
+}
+
+
+@media only screen and (max-device-width: 500px) {
+    .heat-map-content {
+        flex-direction: column;
+    }
+    .heat-map, .contact-content{
+        display: block;
+        width: 100%;
+    }
+ }
+
+ @media only screen and (max-width: 700px){
+    .heat-map-content {
+        flex-direction: column;
+    }
+    .contact-content{
+        display: block;
+        width: 100%;
+    }
+    .heat-map {
+       width: 80%;
+    }
+ }

@@ -27,9 +27,8 @@ section {
     z-index: 2;
     width: 100%;
     margin: auto;
-    padding-top: 10px;
+    padding: 80px 0px 40px 0px;
     background-color: white;
-    border-bottom: 3px solid rgb(25, 80, 170);
 }
 
 h1 {
@@ -40,11 +39,11 @@ h1 {
 }
 
 h2 {
-    color: rgb(25, 80, 170); 
+    color:rgb(216, 174, 97);
     font-size: 20pt;
     font-weight: 600;
     margin: 25px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 p {
@@ -91,8 +90,16 @@ li {
     font-weight: bold;
 }
 
+.gold {
+    color: rgb(216, 174, 97);
+}
+
 .bold {
     font-weight: bold;
+}
+
+.drop {
+    text-shadow: 3px 3px black;
 }
 
 #contact, #home {

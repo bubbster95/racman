@@ -1,7 +1,16 @@
 .parallax-wrapper {
+    display: flex;
+    justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     transform-style: preserve-3d;
+}
+
+.parallax-text {
+    position: relative;
+    top: 20vh;
+    font-size: 30pt;
+    color: rgb(216, 174, 97);
 }
 
 .parallax-wrapper::before {
@@ -32,7 +41,7 @@
 
 #home {
     position: relative;
-    padding: 20px;
+    /* padding: 20px; */
     width: 100vw;
     z-index: 2;
 }
@@ -43,6 +52,7 @@
     margin: 20px;
     background-color: white;
     display: inline-block;
+    border-radius: 5px 0px;
 }
 
 .icon {
@@ -50,9 +60,18 @@
     width: 80%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .home-text-box {
         width: 90%;
+    }
+
+    .parallax-text {
+        top: 10vh;
+        font-size: 25pt;
+    }
+
+    .number {
+        font-size: 40pt;
     }
 }
 

@@ -24,53 +24,59 @@
 
 <body  onload="service()">
     <!-- Nav -->
-    <nav class="nav-container">
-        <div
-            class="home-button"
-            id="home-button"
-            style="background-image: url('assets/RacmanLogo.png');"
-            onClick="document.getElementById('home').scrollIntoView()"
-        ></div>
+    <nav>
+        <div class="nav-container">
+            <div
+                class="home-button"
+                id="home-button"
+                style="background-image: url('assets/RacmanLogo.png');"
+                onClick="document.querySelector('.parallax-wrapper').scrollIntoView()"
+            ></div>
 
-        <!-- <span class="phone">401-397-2722</span> -->
+            <!-- <span class="phone">401-397-2722</span> -->
 
-        <div class="nav-wrap" onClick="hamburger()">
-            
-            <div
-            class="nav-button"
-            id="sales-button"
-            onClick="document.getElementById('sales').scrollIntoView()"
-            >Sales</div>
-            
-            <div
-            class="nav-button"
-            id="services-button"
-            onClick="document.getElementById('services').scrollIntoView()"
-            >Services</div>
-            
-            <div
-            class="nav-button"
-            id="about-button"
-            onClick="document.getElementById('about').scrollIntoView()"
-            >About</div>
-            
-            <div
-            class="nav-button"
-            id="contact-button"
-            onclick="document.getElementById('contact').scrollIntoView()"
-            >Contact</div>
-        </div>
-        <div class="hamburger-icon" onClick="hamburger()">
-            <div class="bar" id="top"></div>
-            <div class="bar" id="middle"></div>
-            <div class="bar" id="bottom"></div>
+            <div class="nav-wrap" onClick="hamburger()">
+                
+                <div
+                class="nav-button"
+                id="sales-button"
+                onClick="document.getElementById('sales').scrollIntoView()"
+                >Sales</div>
+                
+                <div
+                class="nav-button"
+                id="services-button"
+                onClick="document.getElementById('services').scrollIntoView()"
+                >Services</div>
+                
+                <div
+                class="nav-button"
+                id="about-button"
+                onClick="document.getElementById('about').scrollIntoView()"
+                >About</div>
+                
+                <div
+                class="nav-button"
+                id="contact-button"
+                onclick="document.getElementById('contact').scrollIntoView()"
+                >Contact</div>
+            </div>
+            <div class="hamburger-icon" onClick="hamburger()">
+                <div class="bar" id="top"></div>
+                <div class="bar" id="middle"></div>
+                <div class="bar" id="bottom"></div>
+            </div>
         </div>
     </nav>
     <!-- Parallax -->
     <div class="parallax-wrapper">
+        <h2 class="parallax-text white drop bold">
+            Your equipment is our problem.<br>
+            You have better things to do.
+        </h2>
         <div class="home-titles">
         <h2 class="home-title">Call Racman</h2>
-        <h1 class="home-title">401-397-2722</h1>
+        <h1 class="home-title number">401-397-2722</h1>
         </div>
     </div>
     <!-- Home -->
@@ -79,7 +85,7 @@
             <h1 class="home-text-title white">We Offer:</h1>
             
             <div class="home-text-box">
-                <h2>Repair</h2>
+                <h1>Repair</h1>
                 <img class="icon" src="assets/ToolsLogo.png" alt="Wrench and screw driver icon.">
                 <p class="home-text">
                     Friendly, professional, and insured, onsite electronic equipment service.
@@ -87,7 +93,7 @@
             </div>
             
             <div class="home-text-box">
-                <h2>Sales</h2>
+                <h1>Sales</h1>
                 <img class="icon" src="assets/CopierIcon.png" alt="Copier icon.">
                 <p class="home-text">
                     The highest quality newly referbished copiers; at reasonable prices.
@@ -180,23 +186,19 @@
             Serving Rhode Island for over twenty years
             </h2>
 
-            <!-- <p class="about-text">
-                Dave started Racman over twenty years ago.
-                Racman is still going strong today.
-            </p> -->
-            <div class="profile">
-                <img class="profile-image" src="assets/DaveProfile.jpg">
-                <h2 class="image-text">Dave Fusco</h2>
-            </div>
-
-            <div class="profile">
-                    <p class="about-text">As a technician, <span class="blue">Dave has:</span></p>
-                    <ul>
-                        <li>Over thirty years of experience</li>
-                        <li>Up to date industry standards</li>
-                        <li>Bachelor's in Electronics Engineering</li>
-                        <li>Foundation as Navy electrician</li>
-                    </ul>
+            <div class="profiles">
+                <div class="profile-image-container">
+                    <img class="profile-image" src="assets/DaveProfile.jpg">
+                    <h2 class="image-text">Dave Fusco</h2>
+                </div>
+    
+                <div class="profile-text">
+                        <p>
+                        Starting as a Navy electrician,
+                        Dave has over thirty years of experience,
+                        a Bachelor's in Electronics Engineeringis and is up to date on industry standards.
+                        </p>
+                </div>
             </div>
             
             <p class="about-text">
@@ -218,7 +220,7 @@
                 <img class="heat-map" src="assets/HeatMap.png" alt="Heat map of Racman service area">
                 
                 <div class="contact-content">
-                    <h3 class="phone-number white">
+                    <h3 class="phone-number gold">
                         401-397-2722
                     </h3>
 
@@ -242,8 +244,8 @@
                 Your call will be returned promptly; generally within an hour.
             </p>
 
-            <h2 class="contact-text white">
-                <span class="white bold">racman.dave@gmail.com</span>
+            <h2 class="contact-text gold">
+                racman.dave@gmail.com
             </h2>
         </div>
     </section>

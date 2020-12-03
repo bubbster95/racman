@@ -16,6 +16,7 @@
     width: 30%;
     text-align: center;
     margin: auto;
+    border-radius: 5px 0px;
 }
 
 .service-filter {
@@ -81,6 +82,7 @@
     background-color: white;
     color: rgb(25, 80, 170);
     border: 2px solid rgb(25, 80, 170);
+    border-radius: 0px 5px;
 }
 
 .machine-type:hover, .toggled {

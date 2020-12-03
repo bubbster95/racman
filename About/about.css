@@ -3,15 +3,27 @@
     max-width: 800px;
     margin: auto;
 }
+.profiles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.profile {
+.profile-image-container {
     position: relative;
     width: 40%;
-    display: inline-block;
+}
+
+.profile-text {
+    width: 40%;
+    background-color: #d8ae61;
+    border-radius: 0px 5px 0px 0px;
 }
 
 .profile-image {
     width: 100%;
+    border-radius: 0px 5px;
 }
 
 .image-text {
@@ -23,9 +35,24 @@
     bottom: 0;
 }
 
-@media screen and (max-width: 500px) and (max-device-width: 500px){
-   .profile {
-       display: block;
+@media screen and (max-width: 600px){
+   .profile-image-container, .profile-text{
        width: 100%;
+       border-radius: unset;
+   }
+
+   .profiles {
+       flex-direction: column;
    }
 }
+
+@media screen and (max-device-width: 500px){
+    .profile-image-container, .profile-text{
+        width: 100%;
+        border-radius: unset;
+    }
+ 
+    .profiles {
+        flex-direction: column;
+    }
+ }

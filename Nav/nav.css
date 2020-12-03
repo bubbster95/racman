@@ -1,15 +1,22 @@
 /* Nav */
 nav {
     position: sticky;
-    top: 0;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    top: 0;
     z-index: 100;
-    width: 100%;
-    height: 100px;
     color: white;
     background-color: white;
-    border-bottom: 3px solid rgb(25, 80, 170);
+    border-bottom: 3px solid rgb(216, 174, 97);
+}
+
+.nav-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
 }
 
 .home-button {
@@ -69,7 +76,7 @@ nav {
 }
 
 .nav-button:hover, .active {
-    color: rgb(122, 216, 208);
+    color: rgb(216, 174, 97);
 }
 
 .visible {
@@ -115,7 +122,6 @@ nav {
         top: 0;
         color: rgb(25, 80, 170);
         background-color: white;
-        border-bottom: 3px solid rgb(25, 80, 170);
     }
     .nav-button {
         float: right;
@@ -153,10 +159,10 @@ nav {
 }
 
 @media screen and (max-device-width: 500px) {
-    nav {
-        top: 0;
+    .nav-container {
         height: 80px;
-        border-bottom: 10px solid rgb(25, 80, 170);
+        top: 0;
+        border-bottom: 10px solid rgb(216, 174, 97);
     }
     
     .hamburger-icon {
